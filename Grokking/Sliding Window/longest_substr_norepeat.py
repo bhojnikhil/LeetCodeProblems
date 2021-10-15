@@ -12,18 +12,18 @@ def longest_substr(s):
         if s[right] not in mapper:
             mapper[s[right]] = 1
         else:
-            mapper[s[right]] += 1
+            mapper[s[right]]  += 1
         
         if mapper[s[right]] > 1:
             max_str_len = max(max_str_len, len(mapper))
-            left += 1
+            # left += 1
             mapper[s[right]] -= 1
 
     return max_str_len
 
 
 
-print(longest_substr("abccde"))
+print(longest_substr("aabccbb"))
     
     
 

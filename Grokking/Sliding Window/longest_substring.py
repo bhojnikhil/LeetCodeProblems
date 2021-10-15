@@ -38,4 +38,4 @@ def substr1(arr,k):
         print("Countmap", char_freq)
     print(longest)
 
-substr1("araaci", 1)
+substr1("araaci", 2)
